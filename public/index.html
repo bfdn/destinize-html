@@ -1,0 +1,989 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="hidden lg:block">
+        <div class="container px-3 sm:px-0 py-3 flex items-center justify-between gap-x-10">
+            <a href="#">
+                <img src="img/logo.png" class="w-[119px]" alt="">
+            </a>
+            <form action="" class="text-xs text-[#9A9EA6]">
+                <div class="relative">
+                    <input type="text" name="search" placeholder="Cari apapun disini..."
+                        class="py-4 bg-[#F0F1F2] pl-9 rounded-full w-[530px] max-h-[48px] outline-none">
+                    <span class="absolute top-[17px] left-[14px]"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+            </form>
+            <div class="group text-sm text-[#9A9EA6] relative cursor-pointer">
+                <span class="flex items-center gap-x-[6px]">
+                    <i class="fa-solid fa-globe"></i>
+                    Bahasa Indonesia
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.9465 0.253418H4.79316H1.05317C0.413166 0.253418 0.0931657 1.02675 0.546499 1.48008L3.99983 4.93342C4.55317 5.48675 5.45317 5.48675 6.0065 4.93342L7.31983 3.62008L9.45983 1.48008C9.9065 1.02675 9.5865 0.253418 8.9465 0.253418Z"
+                            fill="#9A9EA6" />
+                    </svg>
+                </span>
+                <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-5 w-full divide-y">
+                    <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Türkçe</a>
+                    <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">English</a>
+                </div>
+            </div>
+            <div class="group relative cursor-pointer">
+                <div class="flex items-center gap-x-3">
+                    <span class="w-12 h-12 bg-[#E3EBFD] rounded-full flex items-center justify-center text-new-blue"><i
+                            class="fa-solid fa-location-dot"></i></span>
+                    <div>
+                        <span class="text-xs text-[#9A9EA6]">Lokasi</span>
+                        <div class="flex items-center text-new-blue font-semibold gap-x-2">
+                            Indonesia, Yogyakarta
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.9465 0.253418H4.79316H1.05317C0.413166 0.253418 0.0931657 1.02675 0.546499 1.48008L3.99983 4.93342C4.55317 5.48675 5.45317 5.48675 6.0065 4.93342L7.31983 3.62008L9.45983 1.48008C9.9065 1.02675 9.5865 0.253418 8.9465 0.253418Z"
+                                    fill="#4475F2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-12 w-full divide-y">
+                    <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Türkçe</a>
+                    <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">English</a>
+                </div>
+            </div>
+        </div>
+        <div class="border-b relative z-0"></div>
+        <div class="container px-3 sm:px-0 py-2 flex justify-between items-center">
+            <div class="flex gap-x-10 items-center">
+                <div class="group text-sm text-[#9A9EA6] relative cursor-pointer">
+                    <span class="flex items-center gap-x-[6px]">
+                        Gunung
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-5 w-44 divide-y ">
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                            1</a>
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">Menu
+                            2</a>
+                    </div>
+                </div>
+                <div class="group text-sm text-[#9A9EA6] relative cursor-pointer">
+                    <span class="flex items-center gap-x-[6px]">
+                        Pantai
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-5 w-44 divide-y ">
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                            1 1</a>
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">Menu
+                            2 2</a>
+                    </div>
+                </div>
+                <div class="group text-sm text-[#9A9EA6] relative cursor-pointer">
+                    <span class="flex items-center gap-x-[6px]">
+                        Kuliner
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-5 w-44 divide-y ">
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                            1 2</a>
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">Menu
+                            2 3</a>
+                    </div>
+                </div>
+                <div class="group text-sm text-[#9A9EA6] relative cursor-pointer">
+                    <span class="flex items-center gap-x-[6px]">
+                        Outbond
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-5 w-44 divide-y ">
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                            1</a>
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">Menu
+                            2</a>
+                    </div>
+                </div>
+                <div class="group text-sm text-[#9A9EA6] relative cursor-pointer">
+                    <span class="flex items-center gap-x-[6px]">
+                        Sejarah
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-5 w-44 divide-y ">
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                            1</a>
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">Menu
+                            2</a>
+                    </div>
+                </div>
+                <div class="group text-sm text-[#9A9EA6] relative cursor-pointer">
+                    <span class="flex items-center gap-x-[6px]">
+                        Edukasi
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-5 w-44 divide-y ">
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                            1</a>
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">Menu
+                            2</a>
+                    </div>
+                </div>
+                <div class="group text-sm text-[#9A9EA6] relative cursor-pointer">
+                    <span class="flex items-center gap-x-[6px]">
+                        Romantis
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-5 w-44 divide-y ">
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                            1</a>
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">Menu
+                            2</a>
+                    </div>
+                </div>
+                <div class="group text-sm text-[#9A9EA6] relative cursor-pointer">
+                    <span class="flex items-center gap-x-[6px]">
+                        Alam
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-5 w-44 divide-y ">
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                            1</a>
+                        <div
+                            class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg group/sub relative">
+                            Menu
+                            2
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div
+                                class="flex-col text-sm text-[#9A9EA6] hidden group-hover/sub:flex shadow-lg rounded-lg absolute top-0 w-44 divide-y left-44">
+                                <a href="#"
+                                    class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                                    1</a>
+                                <a href="#"
+                                    class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">Menu
+                                    2
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-x-2">
+                <span class="flex items-center justify-center w-12 h-12 rounded-full bg-new-blue text-white">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <span class="flex items-center justify-center w-12 h-12 rounded-full bg-[#E3EBFD] text-new-blue">
+                    <i class="fa-solid fa-user"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!--Mobile Header-->
+    <header class="lg:hidden">
+        <div class="container px-3 sm:px-0 py-3 flex items-center justify-between gap-x-10">
+            <a href="#">
+                <img src="img/logo.png" class="w-[119px]" alt="">
+            </a>
+            <div class="block md:hidden menuOpen">
+                <div class="space-y-1 cursor-pointer">
+                    <div class="bg-gray-300 w-8 h-1 rounded-full"></div>
+                    <div class="bg-gray-300 w-8 h-1 rounded-full"></div>
+                    <div class="bg-gray-300 w-8 h-1 rounded-full"></div>
+                    <span class="sr-only">Menü Aç</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="border-b relative z-0"></div>
+        <div
+            class="container sm:px-0 hidden mobile-menu flex-col justify-between items-start bg-black/70 animate__animated animate__fadeInLeft">
+            <div class="flex flex-col gap-x-10 items-start w-full divide-y divide-gray-300">
+
+                <div class="w-full px-3  text-sm text-white relative cursor-pointer child">
+                    <span class="flex items-center gap-x-[6px] justify-between py-2">
+                        Gunung
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#ffffff"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="pl-3 py-2 w-44 hidden flex-col childMenu">
+                        <a href="#" class="pl-2 py-1">Menu 1</a>
+                        <a href="#" class="pl-2 py-1">Menu 2</a>
+                    </div>
+                </div>
+
+                <div class="w-full px-3  text-sm text-white relative cursor-pointer child">
+                    <span class="flex items-center gap-x-[6px] justify-between py-2">
+                        Gunung 1
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#ffffff"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="pl-3 py-2 w-44 hidden flex-col childMenu">
+                        <a href="#" class="pl-2 py-1">Menu 1</a>
+                        <a href="#" class="pl-2 py-1">Menu 2</a>
+
+                    </div>
+                </div>
+
+
+                <div class="w-full px-3  text-sm text-white relative cursor-pointer child">
+                    <span class="flex items-center gap-x-[6px] justify-between py-2">
+                        Gunung 2
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#ffffff"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="pl-3 py-2 w-44 hidden flex-col childMenu">
+                        <a href="#" class="pl-2 py-1">Menu 1</a>
+                        <a href="#" class="pl-2 py-1">Menu 2</a>
+
+                    </div>
+                </div>
+
+
+
+                <!--
+                <div class="group text-sm text-[#9A9EA6] relative cursor-pointer">
+                    <span class="flex items-center gap-x-[6px]">
+                        Alam
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <div class="flex-col hidden group-hover:flex shadow-lg rounded-lg absolute top-5 w-44 divide-y ">
+                        <a href="#" class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                            1</a>
+                        <div
+                            class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg group/sub relative">
+                            Menu
+                            2
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2797 0.966797L5.99968 5.66683L0.719727 0.966797" stroke="#9A9EA6"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div
+                                class="flex-col text-sm text-[#9A9EA6] hidden group-hover/sub:flex shadow-lg rounded-lg absolute top-0 w-44 divide-y left-44">
+                                <a href="#"
+                                    class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-t-lg">Menu
+                                    1</a>
+                                <a href="#"
+                                    class="pl-2 py-2 hover:text-gray-600 hover:bg-gray-200 hover:rounded-b-lg">Menu
+                                    2
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+
+
+            <!--
+            <div class="flex gap-x-2">
+                <span class="flex items-center justify-center w-12 h-12 rounded-full bg-new-blue text-white">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+                <span class="flex items-center justify-center w-12 h-12 rounded-full bg-[#E3EBFD] text-new-blue">
+                    <i class="fa-solid fa-user"></i>
+                </span>
+            </div>
+            -->
+
+        </div>
+    </header>
+
+
+    <!--Hero-->
+    <section>
+        <div class="container px-3 sm:px-0 py-8 grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+            <!--Hero Text-->
+            <div class="flex flex-col gap-6">
+                <p
+                    class="text-new-blue-dark bg-new-blue-light-3 px-5 py-3 rounded-full text-sm font-bold max-w-[300px]">
+                    Explore the
+                    wonderful
+                    indonesia!</p>
+                <h1 class="text-5xl md:text-6xl text-new-black font-extrabold">Liburan &
+                    nikmati <span class="text-new-blue">tempat
+                        baru</span> di
+                    indonesia</h1>
+                <p class="text-new-gray-different text-base">
+                    Destinize membuat kamu selalu update terkait tempat liburan baru di Indonesia dengan mengikuti
+                    perkembangan para influencer di sosial media ✨
+                </p>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <a href="#"
+                        class="p-5 bg-new-blue text-base font-bold text-white rounded-xl max-w-[200px] text-center">Mulai
+                        sekarang <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="font-bold text-base text-new-gray-different-1 flex items-center">
+                        <span
+                            class="text-new-blue w-12 h-12 bg-transparent border border-new-blue rounded-full mr-4 flex items-center justify-center">
+                            <i class="fa-sharp fa-solid fa-play"></i>
+                        </span>
+                        Putar Demo
+                    </a>
+                </div>
+            </div>
+            <!--Hero Img-->
+            <div>
+                <img src="img/hero.png" class="w-full h-auto" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Brands-->
+    <section>
+        <div class="container px-3 sm:px-0 py-10 flex flex-wrap justify-center items-center gap-6">
+            <img src="img/brands-1.png"
+                class="h-auto object-none duration-500 grayscale hover:grayscale-0 hover:cursor-pointer" alt="">
+            <img src="img/brands-2.png"
+                class="h-auto object-none duration-500 grayscale hover:grayscale-0 hover:cursor-pointer" alt="">
+            <img src="img/brands-3.png"
+                class="h-auto object-none duration-500 grayscale hover:grayscale-0 hover:cursor-pointer" alt="">
+            <img src="img/brands-4.png"
+                class="h-auto object-none duration-500 grayscale hover:grayscale-0 hover:cursor-pointer" alt="">
+            <img src="img/brands-5.png"
+                class="h-auto object-none duration-500 grayscale hover:grayscale-0 hover:cursor-pointer" alt="">
+        </div>
+    </section>
+
+    <!--Destinations-->
+    <section>
+        <div class="container px-3 sm:px-0 py-10">
+            <h4 class="text-new-blue text-lg font-semibold">DESTINASI FAVORIT</h4>
+            <div class="flex flex-wrap justify-between items-center">
+                <h2 class="text-new-black-1 font-bold">Temukan Destinasi Favoritmu</h2>
+                <a href="#" class="ml-auto text-new-blue font-medium">Lihat Semua ></a>
+            </div>
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
+                <div class="relative">
+                    <img src="img/dest-3.jpg" class="" alt="">
+                    <div class="absolute bottom-0 left-0 px-5 py-2 backdrop-blur-sm bg-white/70 rounded-tr-md">
+                        <p class="text-[#042521] font-semibold">Raja Ampat</p>
+                        <span class="text-xs text-new-gray">Bali</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="img/dest-4.jpg" alt="">
+                    <div class="absolute bottom-0 left-0 px-5 py-2 backdrop-blur-sm bg-white/70 rounded-tr-md">
+                        <p class="text-[#042521] font-semibold">Raja Ampat</p>
+                        <span class="text-xs text-new-gray">Bali</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="img/dest-3.jpg" alt="">
+                    <div class="absolute bottom-0 left-0 px-5 py-2 backdrop-blur-sm bg-white/70 rounded-tr-md">
+                        <p class="text-[#042521] font-semibold">Raja Ampat</p>
+                        <span class="text-xs text-new-gray">Bali</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="img/dest-4.jpg" alt="">
+                    <div class="absolute bottom-0 left-0 px-5 py-2 backdrop-blur-sm bg-white/70 rounded-tr-md">
+                        <p class="text-[#042521] font-semibold">Raja Ampat</p>
+                        <span class="text-xs text-new-gray">Bali</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Reservasi-->
+    <section>
+        <div class="container px-3 sm:px-0 py-10 flex flex-col sm:flex-row items-center">
+            <div class="flex flex-col gap-6">
+                <h4 class="text-new-blue text-lg font-semibold">DESTINASI FAVORIT</h4>
+                <p class="text-5xl text-new-black-1 font-extrabold">Gak mau ngantri? reservasi aja!</p>
+
+                <div class="grid sm:grid-flow-col sm:auto-cols-auto items-center sm:gap-x-4">
+                    <div class="w-12 h-12 row-span-2 bg-new-yellow flex justify-center items-center rounded-xl">
+                        <img src="img/search.svg" alt="">
+                    </div>
+                    <h6 class="text-new-gray-different text-lg font-bold">Cari tempat yang kamu mau</h6>
+                    <p class="text-new-gray-different ">Temukan destinasi selanjutnya yang akan kamu kunjungi dengan
+                        Destinize</p>
+                </div>
+                <div class="grid sm:grid-flow-col sm:auto-cols-auto items-center sm:gap-4">
+                    <div class="w-12 h-12 row-span-2 bg-new-yellow flex justify-center items-center rounded-xl">
+                        <img src="img/pencil.svg" alt="">
+                    </div>
+                    <h6 class="text-new-gray-different text-lg font-bold">Cari tempat yang kamu mau</h6>
+                    <p class="text-new-gray-different ">Temukan destinasi selanjutnya yang akan kamu kunjungi dengan
+                        Destinize</p>
+                </div>
+                <div class="grid sm:grid-flow-col sm:auto-cols-auto items-center sm:gap-4">
+                    <div class="w-12 h-12 row-span-2 bg-new-yellow flex justify-center items-center rounded-xl">
+                        <img src="img/emoji.svg" alt="">
+                    </div>
+                    <h6 class="text-new-gray-different text-lg font-bold">Cari tempat yang kamu mau</h6>
+                    <p class="text-new-gray-different ">Temukan destinasi selanjutnya yang akan kamu kunjungi dengan
+                        Destinize</p>
+                </div>
+            </div>
+            <div class="">
+                <img src="img/reservasi.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Map-->
+    <section>
+        <div class="container px-3 sm:px-0 py-10 flex flex-col gap-4">
+            <h4 class="text-new-blue text-lg font-semibold text-center lg:w-2/3 mx-auto">DESTINASI FAVORIT</h4>
+            <h2 class="text-4xl sm:text-[52px] text-new-black-1 font-semibold text-center lg:w-2/3 mx-auto">Cari Tempat
+                Wisata
+                Didekatmu
+            </h2>
+            <p class="text-new-gray-darker text-lg text-center lg:w-2/3 mx-auto">
+                Fitur ini memungkinkan kamu untuk mencari tempat wisata atau tempat yang sedang populer di daerah kamu
+                dengan begitu kamu akan selalu update dan gak kudet lagi
+            </p>
+            <img src="img/map.jpg" class="w-full" alt="">
+            <div class="flex flex-wrap justify-between mt-8 gap-x-14">
+                <div class="grid grid-flow-col auto-cols-auto gap-2 flex-1">
+                    <span
+                        class="row-span-2 w-12 h-12 bg-new-gray-light-2 flex items-center justify-center rounded-full text-new-black-1"><i
+                            class="fa-solid fa-location-dot"></i></span>
+                    <h4 class="text-xl text-new-black-1 font-bold">Populer di dekatmu</h4>
+                    <p class="text-new-gray text-lg font-medium">Tempat pariwisata yang populer dan pasti dikenal
+                        semua orang
+                        didekatmu
+                    </p>
+                </div>
+                <div class="grid grid-flow-col auto-cols-auto gap-2 flex-1">
+                    <span
+                        class="row-span-2 w-12 h-12 bg-new-gray-light-2 flex items-center justify-center rounded-full text-new-black-1"><i
+                            class="fa-solid fa-heart"></i></span>
+                    <h4 class="text-xl text-new-black-1 font-bold">Favorit di dekatmu</h4>
+                    <p class="text-new-gray text-lg font-medium">
+                        Tempat favorit dan disukai semua orang orang di sekitar daerah kamu
+                    </p>
+                </div>
+                <div class="grid grid-flow-col auto-cols-auto gap-2 flex-1">
+                    <span
+                        class="row-span-2 w-12 h-12 bg-new-gray-light-2 flex items-center justify-center rounded-full text-new-black-1"><i
+                            class="fa-solid fa-users"></i></span>
+                    <h4 class="text-xl text-new-black-1 font-bold">Ramai di didekatmu</h4>
+                    <p class="text-new-gray text-lg font-medium">
+                        Spot yang paling ramai dikunjungi para warga sekaligus para wisatawan
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Blog-->
+    <section>
+        <div class="container px-3 sm:px-0 py-10">
+            <h4 class="text-new-blue text-lg font-semibold">MENGENAL DESTINIZE</h4>
+            <div class="flex flex-wrap justify-between items-center mt-3">
+                <h2 class="text-new-black-1 font-bold">Galeri Pariwisata & Blog Travel</h2>
+                <a href="#" class="ml-auto text-new-blue font-medium">Lihat Semua ></a>
+            </div>
+            <div class="mt-8 gap-10 grid grid-cols-1 lg:grid-cols-4">
+                <div class="bg-white shadow-lg rounded-lg lg:col-span-1">
+                    <img src="img/blog-1.jpg" class="w-full rounded-t-lg" alt="">
+                    <div class="flex flex-col gap-y-4 px-6 py-5">
+                        <div class="text-sm text-new-gray font-medium">26 DESEMBER 2021</div>
+                        <div class="font-semibold text-new-black-1">Tips naik gunung Bromo Biar gak capek cyin</div>
+                        <p class="text-new-gray/70 font-medium text-sm">Jadi gini gann, anda tau bromo? yaaa gunung
+                            kann!</p>
+                        <a href="#" class="text-[#23A6F0] text-sm font-semibold">Baca selengkapnya ..</a>
+                    </div>
+                </div>
+                <div class="relative flex justify-center items-center lg:col-span-3">
+                    <div class="overlay relative">
+                        <img src="img/video.jpg" class="rounded-lg" alt="">
+                    </div>
+
+                    <a href="#"
+                        class="text-white flex justify-center items-center bg-[#23A6F0] w-24 h-24 rounded-full absolute">
+                        <i class="fa-solid fa-play fa-2xl"></i>
+                    </a>
+                </div>
+                <div class="relative rounded-lg lg:rounded-none lg:col-span-4">
+                    <div class="overlay relative">
+                        <img src="img/blog.jpg" class="w-full rounded-lg" alt="">
+                    </div>
+                    <div
+                        class="flex flex-col gap-4 p-6 lg:absolute lg:top-8 bg-white shadow-lg lg:shadow-none lg:bg-transparent">
+                        <div class="text-2xl font-semibold text-black lg:text-white">Tips meminum air kawah biar lidah
+                            melepuh</div>
+                        <p class="font-medium text-gray-500 lg:text-white">Lidah melepuh? why nott, kawah bukan untuk
+                            dilihat kawan..
+                            tapi untuk di minum.. rasakan
+                            kepanasan yang brutal</p>
+                        <p class="text-black lg:text-white">Google Trending Baru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials-->
+    <section>
+        <div class="container px-3 sm:px-0 py-10">
+            <h4 class="text-new-blue text-lg font-semibold text-center lg:w-2/3 mx-auto">TESTIMONIAL DESTINIZE</h4>
+            <h2 class="text-4xl sm:text-[52px] text-new-black-1 font-semibold text-center lg:w-2/3 mx-auto">Apa Kata
+                Mereka Tentang Kami
+            </h2>
+            <p class="text-new-gray-darker text-lg text-center lg:w-2/3 mx-auto">
+                Penasaran apa saja review dari pengguna yang memakai aplikasi dan website Destinize buat nentuin kemana
+                liburan mereka selanjutnya? Yuk cek dibawah!
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 lg:gap-12">
+                <div class="flex flex-col gap-y-4 px-8 py-10 items-center text-center shadow-lg">
+                    <img src="img/customer-1.png" class="max-w-[150px]" alt="">
+                    <p class="text-new-gray font-medium">
+                        Destinize membantu saya Mencari spot tempat wisata baru di Indonesia dengan Mudah
+                    </p>
+                    <div class="stars text-[#E77C40]">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="text-sm text-[#23A6F0] font-semibold">Sandhika Galih</p>
+                    <p class="text-sm text-[#252B42] font-semibold">Dosen di WPUDosen di WPU</p>
+                </div>
+                <div class="flex flex-col gap-y-4 px-8 py-10 items-center text-center shadow-lg">
+                    <img src="img/customer-2.png" class="max-w-[150px]" alt="">
+                    <p class="text-new-gray font-medium">
+                        Destinize membantu saya mendapatkan jodoh, tidak disangka bahwa jodoh saya adalah CS nya
+                    </p>
+                    <div class="stars text-[#E77C40]">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="text-sm text-[#23A6F0] font-semibold">Syauqizaidan Khairan Khalaf</p>
+                    <p class="text-sm text-[#252B42] font-semibold">Mahasiswa di WPU</p>
+                </div>
+                <div class="flex flex-col gap-y-4 px-8 py-10 items-center text-center shadow-lg">
+                    <img src="img/customer-3.png" class="max-w-[150px]" alt="">
+                    <p class="text-new-gray font-medium">
+                        Bikini Bottom menjadi sangat ramai dikunjungi saat saya memasukkannya di Destinize
+                    </p>
+                    <div class="stars text-[#E77C40]">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="text-sm text-[#23A6F0] font-semibold">Petrik Sesat</p>
+                    <p class="text-sm text-[#252B42] font-semibold">Warga di Bikini Bottom</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Question-->
+    <section>
+        <div class="container px-3 sm:px-0 py-10">
+            <h4 class="text-new-blue text-lg font-semibold">FREQUENTLY ASKED QUESTION</h4>
+            <div class="flex flex-wrap justify-between items-center mt-3">
+                <h2 class="text-new-black-1 font-bold">Pertanyaan yang Sering Diajukan</h2>
+                <a href="#" class="ml-auto text-new-blue font-medium">Lihat Semua ></a>
+            </div>
+
+            <div class="divide-y border hover:cursor-pointer mt-20">
+                <div class="group">
+                    <div
+                        class="flex justify-between items-center py-6 sm:px-6 border-l-2 border-transparent duration-500 group-hover:border-new-blue group-hover:bg-[#EBEBEB]">
+                        <p class="font-bold text-[#252B42] duration-500 group-hover:text-new-blue">Kenapa ya
+                            pembayaranku gagal banh?
+                        </p>
+                        <span
+                            class="w-8 h-8 border rounded-full shadow-lg flex justify-center items-center duration-500 group-hover:bg-new-blue group-hover:text-white">
+                            <svg class="group-hover:hidden" width="6" height="9" viewBox="0 0 6 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M-5.62003e-08 7.71429L3.75 4.5L-3.37202e-07 1.28571L0.75 -3.27835e-08L6 4.5L0.75 9L-5.62003e-08 7.71429Z"
+                                    fill="#737373" />
+                            </svg>
+
+                            <svg class="hidden group-hover:block" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.71429 6L4.5 2.25L1.28571 6L-3.27835e-08 5.25L4.5 -2.80136e-07L9 5.25L7.71429 6Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                    </div>
+
+                    <!--Question Answer Content-->
+                    <div class="sm:pl-6 sm:pr-14 pb-6 text-justify bg-[#EBEBEB] hidden group-hover:block">
+                        1111 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting,
+                        remaining essentially unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting,
+                        remaining essentially unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, wh
+                    </div>
+                </div>
+                <div class="group">
+                    <div
+                        class="flex justify-between items-center py-6 sm:px-6 border-l-2 border-transparent duration-500 group-hover:border-new-blue group-hover:bg-[#EBEBEB]">
+                        <p class="font-bold text-[#252B42] duration-500 group-hover:text-new-blue">Apakah rehan wangsaff
+                            adalah CEO dari Destinize?
+                        </p>
+                        <span
+                            class="w-8 h-8 border rounded-full shadow-lg flex justify-center items-center duration-500 group-hover:bg-new-blue group-hover:text-white">
+                            <svg class="group-hover:hidden" width="6" height="9" viewBox="0 0 6 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M-5.62003e-08 7.71429L3.75 4.5L-3.37202e-07 1.28571L0.75 -3.27835e-08L6 4.5L0.75 9L-5.62003e-08 7.71429Z"
+                                    fill="#737373" />
+                            </svg>
+
+                            <svg class="hidden group-hover:block" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.71429 6L4.5 2.25L1.28571 6L-3.27835e-08 5.25L4.5 -2.80136e-07L9 5.25L7.71429 6Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                    </div>
+
+                    <!--Question Answer Content-->
+                    <div class="sm:pl-6 sm:pr-14 pb-6 text-justify bg-[#EBEBEB] hidden group-hover:block">
+                        22222 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting,
+                        remaining essentially unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting,
+                        remaining essentially unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, wh
+                    </div>
+                </div>
+                <div class="group">
+                    <div
+                        class="flex justify-between items-center py-6 sm:px-6 border-l-2 border-transparent duration-500 group-hover:border-new-blue group-hover:bg-[#EBEBEB]">
+                        <p class="font-bold text-[#252B42] duration-500 group-hover:text-new-blue">Kenapa harus memilih
+                            Destinize?
+                        </p>
+                        <span
+                            class="w-8 h-8 border rounded-full shadow-lg flex justify-center items-center duration-500 group-hover:bg-new-blue group-hover:text-white">
+                            <svg class="group-hover:hidden" width="6" height="9" viewBox="0 0 6 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M-5.62003e-08 7.71429L3.75 4.5L-3.37202e-07 1.28571L0.75 -3.27835e-08L6 4.5L0.75 9L-5.62003e-08 7.71429Z"
+                                    fill="#737373" />
+                            </svg>
+
+                            <svg class="hidden group-hover:block" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.71429 6L4.5 2.25L1.28571 6L-3.27835e-08 5.25L4.5 -2.80136e-07L9 5.25L7.71429 6Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                    </div>
+
+                    <!--Question Answer Content-->
+                    <div class="sm:pl-6 sm:pr-14 pb-6 text-justify bg-[#EBEBEB] hidden group-hover:block">
+                        3333 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting,
+                        remaining essentially unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting,
+                        remaining essentially unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, wh
+                    </div>
+                </div>
+                <div class="group">
+                    <div
+                        class="flex justify-between items-center py-6 sm:px-6 border-l-2 border-transparent duration-500 group-hover:border-new-blue group-hover:bg-[#EBEBEB]">
+                        <p class="font-bold text-[#252B42] duration-500 group-hover:text-new-blue">Afa iyah bang?
+                            Gapeduli
+                        </p>
+                        <span
+                            class="w-8 h-8 border rounded-full shadow-lg flex justify-center items-center duration-500 group-hover:bg-new-blue group-hover:text-white">
+                            <svg class="group-hover:hidden" width="6" height="9" viewBox="0 0 6 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M-5.62003e-08 7.71429L3.75 4.5L-3.37202e-07 1.28571L0.75 -3.27835e-08L6 4.5L0.75 9L-5.62003e-08 7.71429Z"
+                                    fill="#737373" />
+                            </svg>
+
+                            <svg class="hidden group-hover:block" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.71429 6L4.5 2.25L1.28571 6L-3.27835e-08 5.25L4.5 -2.80136e-07L9 5.25L7.71429 6Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                    </div>
+
+                    <!--Question Answer Content-->
+                    <div class="sm:pl-6 sm:pr-14 pb-6 text-justify bg-[#EBEBEB] hidden group-hover:block">
+                        4444 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting,
+                        remaining essentially unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting,
+                        remaining essentially unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, wh
+                    </div>
+                </div>
+                <div class="group">
+                    <div
+                        class="flex justify-between items-center py-6 sm:px-6 border-l-2 border-transparent duration-500 group-hover:border-new-blue group-hover:bg-[#EBEBEB]">
+                        <p class="font-bold text-[#252B42] duration-500 group-hover:text-new-blue">Apa rekomendasi
+                            tempat buat orang yang jomblo?
+                        </p>
+                        <span
+                            class="w-8 h-8 border rounded-full shadow-lg flex justify-center items-center duration-500 group-hover:bg-new-blue group-hover:text-white">
+                            <svg class="group-hover:hidden" width="6" height="9" viewBox="0 0 6 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M-5.62003e-08 7.71429L3.75 4.5L-3.37202e-07 1.28571L0.75 -3.27835e-08L6 4.5L0.75 9L-5.62003e-08 7.71429Z"
+                                    fill="#737373" />
+                            </svg>
+
+                            <svg class="hidden group-hover:block" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.71429 6L4.5 2.25L1.28571 6L-3.27835e-08 5.25L4.5 -2.80136e-07L9 5.25L7.71429 6Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                    </div>
+
+                    <!--Question Answer Content-->
+                    <div class="sm:pl-6 sm:pr-14 pb-6 text-justify bg-[#EBEBEB] hidden group-hover:block">
+                        5555 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting,
+                        remaining essentially unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting,
+                        remaining essentially unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, wh
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--CTA-->
+    <section class="mt-24">
+        <div
+            class="container px-3 sm:px-0 flex flex-col md:flex-row justify-between bg-new-blue rounded-2xl items-center">
+            <div class="sm:pl-12 py-10 md:basis-2/5">
+                <h4 class="text-4xl text-white font-semibold">Masih bingung cari tempat yang cocok?</h4>
+                <p class="text-[#F1F2F6] text-lg mt-8">Tenang, kami mempunyai fitur rekomendasi yang membantu kamu
+                    mencari
+                    tempat berlibur yang tepat dengan
+                    menjawab pertanyaan yang kami berikan.</p>
+                <a href="#" class="text-white font-bold text-xl mt-8 inline-block">Mulai sekarang <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div>
+                <img src="img/cta.png" class="rounded-xl" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="mt-24">
+        <div class="container px-3 sm:px-0 py-12 grid grid-cols-6 gap-8">
+            <div class="col-span-6 sm:col-span-3">
+                <img src="img/footer-logo.png" alt="">
+                <p class="text-[#9A9EA6] text-sm mt-4 lg:w-2/3">Destinize adalah website atau layanan aplikasi yang
+                    membantu kamu
+                    memilih atau merekomendasikan
+                    tempat yang dijuluki 'hidden gems' agar lebih dikenal dan ramai <span class="text-new-blue">Baca
+                        Selengkapnya</span></p>
+                <ul class="text-[#9A9EA6] text-sm flex flex-col gap-y-4 mt-4">
+                    <li><i class="fa-solid fa-phone"></i> 0851-5616-2840</li>
+                    <li><i class="fa-solid fa-envelope"></i> syaokay@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Ciamis, Jawa Barat. Indonesia</li>
+                    <li><i class="fa-solid fa-print"></i> +1-212-9876543</li>
+                </ul>
+            </div>
+            <div class="col-span-6 sm:col-span-1 text-[#9A9EA6] text-sm flex flex-col gap-y-4">
+                <h6 class="mb-2 text-black text-lg font-bold">Tentang</h6>
+                <a href="#">Tentang Kami</a>
+                <a href="#">Blog</a>
+                <a href="#">Karir</a>
+                <a href="#">Pekerjaan</a>
+                <a href="#">Berita</a>
+                <a href="#">Galeri</a>
+                <a href="#">Afiliasi</a>
+            </div>
+            <div class="col-span-6 sm:col-span-1 text-[#9A9EA6] text-sm flex flex-col gap-y-4">
+                <h6 class="mb-2 text-black text-lg font-bold">Support</h6>
+                <a href="#">Kontak Kami</a>
+                <a href="#">Online Chat</a>
+                <a href="#">Whatsapp</a>
+                <a href="#">Telegram</a>
+                <a href="#">Tiket</a>
+                <a href="#">Call Center</a>
+                <a href="#">Bantuan</a>
+            </div>
+            <div class="col-span-6 sm:col-span-1 text-[#9A9EA6] text-sm flex flex-col gap-y-4">
+                <h6 class="mb-2 text-black text-lg font-bold">FAQ</h6>
+                <a href="#">Akun</a>
+                <a href="#">Organisir</a>
+                <a href="#">Order</a>
+                <a href="#">Pembayaran</a>
+                <a href="#">Pengembalian</a>
+                <a href="#">Copyright</a>
+                <a href="#">Bahasa</a>
+            </div>
+            <div
+                class="col-span-6 row-start-5 row-end-6 sm:row-start-2 sm:row-end-3 flex flex-col sm:flex-row justify-between text-[#9A9EA6] text-sm">
+                <span class="order-2 sm:order-1">© 2021-2022, All Rights Reserved</span>
+                <div class="flex flex-wrap gap-x-10 gap-y-4 order-1 sm:order-2">
+                    <a href="#">Tentang Kami</a>
+                    <a href="#">Kontak</a>
+                    <a href="#">Privasi & policy</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Panduan Pengunaan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

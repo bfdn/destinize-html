@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url("../fonts/PlusJakartaSans-Regular.ttf") format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url("../fonts/PlusJakartaSans-Medium.ttf") format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url("../fonts/PlusJakartaSans-SemiBold.ttf") format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url("../fonts/PlusJakartaSans-Bold.ttf") format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url("../fonts/PlusJakartaSans-ExtraBold.ttf") format('truetype');
+    font-weight: 800;
+}
+
+@layer base {
+    html {
+        @apply font-plujakartasans;
+        font-weight: 400;
+    }
+
+    h1 {
+        @apply text-6xl;
+        font-weight: 800;
+    }
+
+    h2 {
+        @apply text-5xl;
+        font-weight: 800;
+    }
+
+    h3 {
+        @apply text-4xl;
+        font-weight: 800;
+    }
+
+    h4 {
+        @apply text-3xl;
+        font-weight: 800;
+        line-height: 33.6px;
+    }
+
+    h5 {
+        @apply text-2xl;
+        font-weight: 600;
+    }
+
+    h6 {
+        @apply text-xl;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .subtitle1 {
+        @apply text-lg;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    .subtitle2 {
+        @apply text-lg;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .lead1 {
+        @apply text-lg;
+        font-weight: 400;
+    }
+
+    .lead2 {
+        @apply text-sm;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .large-label {
+        @apply text-xl;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .medium-label {
+        @apply text-sm;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .small-label {
+        @apply text-xs;
+        font-weight: 600;
+    }
+
+    .capitalised {
+        @apply text-sm;
+        font-weight: 800;
+        line-height: 18px;
+        letter-spacing: 2px;
+    }
+
+    .badge {
+        @apply text-xl;
+        font-weight: 400;
+    }
+
+    .overlay::before {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: black;
+        opacity: .3;
+        border-radius: 8px;
+    }
+
+}
